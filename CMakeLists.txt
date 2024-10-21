@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 3.27)
+project(main)
+set(CMAKE_CXX_STANDARD 23)
+include_directories(headers)
+file(GLOB_RECURSE SRC_FILES "${CMAKE_SOURCE_DIR}/src/*.cpp" "${CMAKE_SOURCE_DIR}/main.cpp")
+add_executable(main ${SRC_FILES})
